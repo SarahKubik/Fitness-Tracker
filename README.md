@@ -8,11 +8,11 @@ Connecting the database to the frontend to create an interactive fitness tracker
 
 ## Acceptance Criteria
 
->Given only the front end
+>
 
 ## Mock-up
 
-// [![Task List Note Taker App](https://res.cloudinary.com/marcomontalbano/image/upload/v1631346045/video_to_markdown/images/google-drive--1PAHAbgzgX8oiBC8QivUmiXtFfvXU8XMO-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1PAHAbgzgX8oiBC8QivUmiXtFfvXU8XMO/ "Task List Note Taker App")
+
 
 ## Installation
 
