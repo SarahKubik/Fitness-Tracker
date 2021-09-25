@@ -1,6 +1,6 @@
 # Fitness-Tracker
 
-Connecting the database to the frontend to create an interactive fitness tracker.The frontend code was included, adding schemas and routes are needed to complete the tracker.
+Connecting the database locally to create an interactive fitness tracker.The frontend code was included, adding schemas and routes are needed to complete the tracker.
 
 ## User Story
 
