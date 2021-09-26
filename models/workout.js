@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 // Setup of daily workout schema
-const workoutSchema = new Schema({
+const workoutSchema = new Schema ({
  day: {
      type: Date,
      default: () => new Date ()
@@ -14,16 +14,16 @@ const workoutSchema = new Schema({
      type: {
         type: String,
         trim: true,
-        required: "Is this a resistance or cardio exercise?"
+        required: "Is this a resistance or cardio exercise"
      },
      name: {
          type: String,
          trim: true,
-         required: "what is the name of the exercise?"
+         required: "What is the name of the exercise"
      },
      duration: {
          type: Number,
-         required: "How many minutes did you perform this exercise?"
+         required: "How many minutes did you perform this exercise"
      },
      weight: {
          type: Number
@@ -37,7 +37,7 @@ const workoutSchema = new Schema({
      distance: {
          type: Number
      }
-    }]
+   }]
 });
 
 const workout = mongoose.model("workout", workoutSchema);
