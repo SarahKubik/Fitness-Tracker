@@ -1,7 +1,7 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "y",
   "version": "1.0.0",
-  "description": "",
+  "description": "Connecting the database locally to create an interactive fitness tracker.The frontend code was included, adding schemas and routes are needed to complete the tracker.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,5 +22,10 @@
     "mongoose": "^5.13.9",
     "morgan": "^1.9.1",
     "nodemon": "^2.0.13"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "y"
   }
 }
