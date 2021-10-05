@@ -8,22 +8,36 @@ Connecting the database locally to create an interactive fitness tracker.The fro
 
 ## Acceptance Criteria
 
->
+>When the user loads the page, they will be given the following options:
+
+* Add new exercises to their current workout.
+
+* Create a new workout.
+
+* View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+
+* View the total duration of each workout from the past seven workouts on the `stats` page.
+
+## Startup
+
+![Startup](public\assets\startup.png)
 
 ## Mock-up
+
+![Stats](public/assets/stats.png)
+
+![Dashboard](public/assets/Dashboard.png)
 
 ## Installation
 
 * MongoDB
 * Mongoose
 * Express
-* Heroku
+* NPM
 * Video to markdown!
 
 ## Links
 
 Github: <https://github.com/SarahKubik/Fitness-Tracker.git>
-
-URL: <https://sarahkubik.github.io/Fitness-Tracker/>
 
 Heroku: <https://fitnesstracker-bc.herokuapp.com/>
