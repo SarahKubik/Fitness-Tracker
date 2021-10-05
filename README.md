@@ -40,4 +40,4 @@ Connecting the database locally to create an interactive fitness tracker.The fro
 
 Github: <https://github.com/SarahKubik/Fitness-Tracker.git>
 
-Heroku: <https://fitnesstracker-bc.herokuapp.com/>
+Heroku: <https://git.heroku.com/calorieburner.git>
