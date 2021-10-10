@@ -61,5 +61,10 @@ app.use(express.static("public"));
     error => {
       console.error('Database connection failed:', error);
       throw new Error('Could not connect to the database');
-    }
+    },
+
+    new Promise((resolve, reject) => {
+      reject('error');
+    }).catch((error) => {})
+
   );
