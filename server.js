@@ -22,6 +22,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
 app.use(express.static("public"));
+app.set( 'port', ( process.env.PORT || 27017));
 
 // Connecting to the database
 // start mongodb in terminal
