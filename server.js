@@ -4,9 +4,11 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 
 
+const dotenv = require("dotenv");
+dotenv.config();
 
 // Basic express server and port setup
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/workout";
 const app = express();
 // app.set( 'port', ( process.env.PORT || 27017));
