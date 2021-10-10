@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const PORT = 3001;
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
 const app = express();
-
+app.set( 'port', ( process.env.PORT || 27017));
 
 // requires the content in the models folder
 const db = require("./models");
@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
 app.use(express.static("public"));
-app.set( 'port', ( process.env.PORT || 27017));
+
 
 // Connecting to the database
 // start mongodb in terminal
