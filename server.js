@@ -6,10 +6,10 @@ const mongoose = require("mongoose");
 
 
 // Basic express server and port setup
-const PORT = 3001;
+const PORT = 27017;
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
 const app = express();
-app.set( 'port', ( process.env.PORT || 27017));
+// app.set( 'port', ( process.env.PORT || 27017));
 
 // requires the content in the models folder
 const db = require("./models");
