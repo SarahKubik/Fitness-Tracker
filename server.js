@@ -6,8 +6,8 @@ const mongoose = require("mongoose");
 
 
 // Basic express server and port setup
-const PORT = 27017;
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
+const PORT = 3001;
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/workout";
 const app = express();
 // app.set( 'port', ( process.env.PORT || 27017));
 
