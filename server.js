@@ -24,8 +24,9 @@ app.use(express.static("public"));
 // Connecting to the database
 // start mongodb in terminal
 // db
-const URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
 
+const PORT = 3000;
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
 mongoose.connect(URI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
