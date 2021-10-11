@@ -37,15 +37,15 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout",{
 });
 
 // routes
-app.use(require("./Routes_old/api.js"));
+app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 
 
-  //   newPromise((resolve, reject) => {
-  //   reject('error');
-  // }).catch((error) => {})
+    newPromise((resolve, reject) => {
+    reject('error');
+  }).catch((error) => {})
 
 });
 
