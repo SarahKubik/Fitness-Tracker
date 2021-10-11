@@ -9,7 +9,7 @@ dotenv.config();
 
 // Basic express server and port setup
 const PORT = process.env.PORT || 3006;
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/workout";
+
 const app = express();
 // app.set( 'port', ( process.env.PORT || 27017));
 
@@ -30,7 +30,7 @@ app.use(express.static("public"));
 // start mongodb in terminal
 // db
 
-mongoose.connect( MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout",{
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
@@ -49,24 +49,4 @@ app.listen(PORT, () => {
 
 });
 
-  // const url = `mongodb+srv://${process.env.DB_HOST}`;
-  // const options = {
-  //   user: process.env.DB_USER,
-  //   pass: process.env.DB_PASS,
-  //   dbName: process.env.DB_NAME,
-  //   useNewUrlParser: true,
-  //   useUnifiedTopology: true,
-  //   useFindAndModify: false,
-  //   useCreateIndex: true
-  // };
-  // mongoose.connect(uri, options).then(
-  //   _ => {
-  //     console.info('Database connection stablished');
-  //     app.listen(port, function() {
-  //       debug(`listening on port ${port}`);
-  //     });
-  //   },
-  //   error => {
-  //     console.error('Database connection failed:', error);
-  //     throw new Error('Could not connect to the database');
-  //   },
+  
