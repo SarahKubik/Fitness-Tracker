@@ -8,9 +8,9 @@ const mongoose = require("mongoose");
 // dotenv.config();
 
 // Basic express server and port setup
-const PORT = process.env.PORT || 3006;
-
-const app = express();
+const PORT = process.env.PORT || '3000';
+app = express();
+app.set("port", PORT);
 // app.set( 'port', ( process.env.PORT || 27017));
 
 // requires the content in the models folder
@@ -41,11 +41,6 @@ app.use(require("./routes/app.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
-
-
-    newPromise((resolve, reject) => {
-    reject('error');
-  }).catch((error) => {})
 
 });
 
