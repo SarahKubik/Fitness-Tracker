@@ -14,8 +14,8 @@ const app = express();
 // app.set( 'port', ( process.env.PORT || 27017));
 
 // requires the content in the models folder
-const db = require("./models");
-const Workout = require("./models/workout");
+// const db = require("./models");
+// const Workout = require("./models/workout");
 
 app.use(logger("dev"));
 
