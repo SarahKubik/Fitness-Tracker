@@ -4,8 +4,8 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 
 
-const dotenv = require("dotenv");
-dotenv.config();
+// const dotenv = require("dotenv");
+// dotenv.config();
 
 // Basic express server and port setup
 const PORT = process.env.PORT || 3006;
@@ -49,4 +49,3 @@ app.listen(PORT, () => {
 
 });
 
-  
