@@ -20,7 +20,7 @@ Connecting the database locally to create an interactive fitness tracker.The fro
 
 ## Startup
 
-![Startup](public\assets\startup.png)
+![Startup](public/assets/startup.png)
 
 ## Mock-up
 
